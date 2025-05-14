@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="student-container">
+    <div class="sidebar">
+      <div class="logo">Студент</div>
+      <nav>
+        <ul>
+          <li><button class="tab-btn active" data-tab="profile">Профиль</button></li>
+          <li><button class="tab-btn" data-tab="schedule">Расписание</button></li>
+          <li><button class="tab-btn" data-tab="news">Новости</button></li>
+          <li><button id="logout-btn">Выйти</button></li>
+        </ul>
+      </nav>
+      <div class="notification-bell">
+        <span>🔔</span>
+        <span class="badge">3</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Блок профиля -->
+      <div id="profile" class="tab-content active">
+        <h2>Мой профиль</h2>
+        <div class="profile-info">
+          <p><strong>Имя:</strong> <span id="student-name">Иван</span></p>
+          <p><strong>Фамилия:</strong> <span id="student-surname">Иванов</span></p>
+          <p><strong>Группа:</strong> <span id="student-group">Группа 101</span></p>
+        </div>
+      </div>
+
+      <!-- Блок расписания -->
+      <div id="schedule" class="tab-content">
+        <h2>Моё расписание</h2>
+        <div class="week-schedule">
+          <!-- Расписание будет загружаться через JS -->
+        </div>
+      </div>
+
+      <!-- Блок новостей -->
+      <div id="news" class="tab-content">
+        <h2>Новости</h2>
+        <div class="news-list">
+          <!-- Новости будут загружаться через JS -->
+        </div>
+      </div>
+
+      <!-- Панель уведомлений -->
+      <div class="notifications-panel">
+        <h3>Уведомления</h3>
+        <div class="notifications-list">
+          <div class="notification">Новое расписание</div>
+          <div class="notification">Изменение в составе группы</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!-- В конце body -->
+<script src="C:/Users/ISP-22/Desktop/Kursovaya1/js/navigation.js"></script>
+<script src="C:/Users/ISP-22/Desktop/Kursovaya1/js/auth.js"></script>
+<script src="C:/Users/ISP-22/Desktop/Kursovaya1/js/student.js"></script>
+<script src="C:/Users/ISP-22/Desktop/Kursovaya1/js/news.js"></script>
+</html>
